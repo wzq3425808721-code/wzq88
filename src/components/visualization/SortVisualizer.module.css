@@ -1,0 +1,62 @@
+.container {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  min-height: 400px;
+}
+
+.description {
+  margin-bottom: 20px;
+  min-height: 32px;
+}
+
+.stepInfo {
+  font-size: 15px;
+  color: var(--accent-yellow);
+  font-weight: 500;
+  padding: 8px 16px;
+  background: rgba(245, 158, 11, 0.1);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent-yellow);
+}
+
+.barsContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2px;
+  height: 320px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.barWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.bar {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.bar:hover {
+  filter: brightness(1.2);
+}
+
+.barLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 6px;
+  font-family: var(--font-mono);
+}
+
+.barIndex {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}

@@ -1,0 +1,60 @@
+.page { max-width: 1400px; margin: 0 auto; padding: 24px; }
+.header { margin-bottom: 32px; }
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); margin-bottom: 12px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.sep { color: var(--text-muted); }
+.current { color: var(--text-primary); font-weight: 500; }
+.title { font-size: 36px; font-weight: 800; letter-spacing: -1px; margin-bottom: 8px; }
+.subtitle { font-size: 16px; color: var(--text-secondary); max-width: 600px; }
+.content { display: grid; grid-template-columns: 1fr 320px; gap: 24px; }
+.main { display: flex; flex-direction: column; gap: 16px; }
+
+.operationPanel {
+  display: flex; align-items: center; gap: 12px; padding: 16px 20px;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); flex-wrap: wrap;
+}
+.input { padding: 8px 12px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-primary); font-size: 14px; width: 100px; }
+.input:focus { border-color: var(--accent-blue); }
+.opBtn { padding: 8px 16px; border-radius: var(--radius-sm); background: var(--accent-blue); color: white; font-size: 13px; font-weight: 500; }
+.opBtn:hover { opacity: 0.9; }
+.popBtn { background: var(--accent-red); }
+.peekBtn { background: var(--accent-green); }
+
+.operationInfo { padding: 12px 16px; background: rgba(245, 158, 11, 0.1); border-left: 3px solid var(--accent-yellow); border-radius: var(--radius-sm); font-size: 14px; color: var(--accent-yellow); font-weight: 500; }
+.poppedInfo { padding: 12px 16px; background: rgba(239, 68, 68, 0.1); border-left: 3px solid var(--accent-red); border-radius: var(--radius-sm); font-size: 14px; color: var(--accent-red); font-weight: 500; }
+
+.visualArea { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; }
+
+.stackContainer { display: flex; align-items: flex-start; gap: 12px; justify-content: center; }
+.topPointer { font-size: 14px; color: var(--accent-blue); font-weight: 600; padding-top: 8px; }
+.stackBody { display: flex; flex-direction: column; align-items: center; min-width: 160px; }
+
+.stackItem {
+  width: 160px; padding: 16px; background: var(--bg-secondary); border: 2px solid var(--border);
+  border-radius: var(--radius-sm); text-align: center; transition: all 0.3s; margin-bottom: 2px;
+}
+.stackTop { border-color: var(--accent-blue); }
+.itemHighlight { border-color: var(--accent-yellow); background: rgba(245, 158, 11, 0.1); box-shadow: 0 0 12px rgba(245, 158, 11, 0.2); }
+.itemValue { font-size: 20px; font-weight: 700; font-family: var(--font-mono); }
+.itemIndex { font-size: 11px; color: var(--text-muted); }
+.emptyStack { padding: 40px; color: var(--text-muted); font-size: 14px; }
+.stackBottom { font-size: 12px; color: var(--text-muted); margin-top: 8px; letter-spacing: 2px; }
+
+.applications { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; }
+.applications h3 { font-size: 16px; font-weight: 600; margin-bottom: 16px; }
+.appGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.appCard { padding: 14px; background: var(--bg-secondary); border-radius: var(--radius-sm); }
+.appCard strong { font-size: 14px; color: var(--accent-blue); display: block; margin-bottom: 4px; }
+.appCard p { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+
+.sidebar { display: flex; flex-direction: column; gap: 16px; }
+.infoCard { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px; }
+.infoCard h3 { font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+
+.principle { font-size: 18px; font-weight: 700; color: var(--accent-cyan); font-family: var(--font-mono); margin-bottom: 8px; }
+.principleDesc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+
+.opList { display: flex; flex-direction: column; gap: 8px; }
+.opItem { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--bg-secondary); border-radius: var(--radius-sm); font-size: 14px; }
+.good { color: var(--accent-green); font-weight: 600; font-family: var(--font-mono); }
+.bad { color: var(--accent-red); font-weight: 600; font-family: var(--font-mono); }

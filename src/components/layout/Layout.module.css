@@ -1,0 +1,38 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding-top: 64px;
+}
+
+.aiToggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--gradient-1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  z-index: 100;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.aiToggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.4);
+}
+
+.aiToggleHidden {
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+}

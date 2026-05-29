@@ -1,0 +1,63 @@
+.page { max-width: 1400px; margin: 0 auto; padding: 24px; }
+.header { margin-bottom: 32px; }
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); margin-bottom: 12px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.sep { color: var(--text-muted); }
+.current { color: var(--text-primary); font-weight: 500; }
+.title { font-size: 36px; font-weight: 800; letter-spacing: -1px; margin-bottom: 8px; }
+.subtitle { font-size: 16px; color: var(--text-secondary); }
+
+.controls {
+  display: flex; align-items: center; gap: 16px; margin-bottom: 24px;
+  padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-md); flex-wrap: wrap;
+}
+.controlGroup { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-secondary); }
+.controlGroup input[type="number"] { width: 80px; padding: 6px 10px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-primary); font-size: 14px; }
+.controlGroup input[type="range"] { width: 100px; }
+.primaryBtn { padding: 8px 20px; background: var(--accent-blue); color: white; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; }
+.primaryBtn:hover { background: #2563eb; }
+.primaryBtn:disabled { opacity: 0.5; }
+.secondaryBtn { padding: 8px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-secondary); font-size: 14px; }
+.stepInfo { font-size: 13px; color: var(--text-muted); margin-left: auto; }
+
+.arrayContainer { margin-bottom: 20px; }
+.arrayRow { display: flex; gap: 8px; justify-content: center; padding: 20px; }
+.cell {
+  width: 64px; height: 64px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: var(--bg-card); border: 2px solid var(--border); border-radius: var(--radius-sm);
+  transition: all 0.3s;
+}
+.cellValue { font-size: 18px; font-weight: 700; }
+.cellIndex { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+.cellInRange { border-color: var(--accent-blue); background: rgba(59, 130, 246, 0.1); }
+.cellComparing { border-color: var(--accent-yellow); background: rgba(245, 158, 11, 0.15); transform: scale(1.1); }
+.cellEliminated { border-color: var(--border); opacity: 0.3; }
+.cellFound { border-color: var(--accent-green); background: rgba(16, 185, 129, 0.2); transform: scale(1.15); box-shadow: 0 0 16px rgba(16, 185, 129, 0.3); }
+
+.pointerRow { display: flex; gap: 8px; justify-content: center; }
+.pointerCell { width: 64px; height: 24px; display: flex; justify-content: center; align-items: center; }
+.pointer { font-size: 14px; font-weight: 700; }
+
+.stepDescription {
+  padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-md); font-size: 15px; color: var(--text-secondary);
+  text-align: center; margin-bottom: 24px;
+}
+.stepFound { border-color: var(--accent-green); color: var(--accent-green); font-weight: 600; }
+
+.algorithmTabs { display: flex; gap: 8px; margin-bottom: 24px; }
+.tab {
+  padding: 8px 20px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); color: var(--text-secondary); text-decoration: none; font-size: 14px;
+}
+.tabActive { border-color: var(--accent-blue); color: var(--accent-blue); background: rgba(59, 130, 246, 0.1); }
+
+.complexityCard {
+  padding: 20px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+.complexityCard h3 { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+.complexityGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; text-align: center; }
+.complexityGrid div { padding: 12px; background: var(--bg-secondary); border-radius: var(--radius-sm); font-size: 14px; }
+.complexityGrid strong { color: var(--accent-blue); }

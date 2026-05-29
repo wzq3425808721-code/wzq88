@@ -1,0 +1,120 @@
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header { margin-bottom: 32px; }
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); margin-bottom: 12px; }
+.breadcrumb a { color: var(--text-secondary); text-decoration: none; }
+.breadcrumb a:hover { color: var(--accent-blue); }
+.sep { color: var(--text-muted); }
+.current { color: var(--text-primary); font-weight: 500; }
+.title { font-size: 36px; font-weight: 800; letter-spacing: -1px; margin-bottom: 8px; }
+.subtitle { font-size: 16px; color: var(--text-secondary); max-width: 600px; }
+
+.content { display: grid; grid-template-columns: 1fr 320px; gap: 24px; }
+.main { display: flex; flex-direction: column; gap: 16px; }
+
+.operationPanel {
+  display: flex; align-items: center; gap: 12px; padding: 16px 20px;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); flex-wrap: wrap;
+}
+
+.inputGroup { display: flex; gap: 8px; }
+
+.input {
+  padding: 8px 12px; background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); color: var(--text-primary); font-size: 14px; width: 100px;
+}
+
+.input:focus { border-color: var(--accent-blue); }
+
+.buttonGroup { display: flex; gap: 6px; margin-left: auto; }
+
+.opBtn {
+  padding: 8px 16px; border-radius: var(--radius-sm); background: var(--accent-blue);
+  color: white; font-size: 13px; font-weight: 500;
+}
+
+.opBtn:hover { opacity: 0.9; }
+.deleteBtn { background: var(--accent-red); }
+.searchBtn { background: var(--accent-green); }
+
+.operationInfo {
+  padding: 12px 16px; background: rgba(245, 158, 11, 0.1); border-left: 3px solid var(--accent-yellow);
+  border-radius: var(--radius-sm); font-size: 14px; color: var(--accent-yellow); font-weight: 500;
+}
+
+.visualArea {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px;
+}
+
+.memoryLabel { font-size: 12px; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+
+.arrayContainer { display: flex; gap: 2px; flex-wrap: wrap; }
+
+.cell {
+  width: 80px; padding: 12px 8px; background: var(--bg-secondary); border: 2px solid var(--border);
+  border-radius: var(--radius-sm); text-align: center; cursor: pointer; transition: all 0.3s;
+}
+
+.cell:hover { border-color: var(--accent-blue); background: var(--bg-card-hover); }
+
+.cellHighlight {
+  border-color: var(--accent-yellow); background: rgba(245, 158, 11, 0.1);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.2);
+}
+
+.cellAccess {
+  border-color: var(--accent-green); background: rgba(16, 185, 129, 0.1);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
+}
+
+.cellValue { font-size: 18px; font-weight: 700; font-family: var(--font-mono); }
+.cellIndex { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+.cellAddr { font-size: 10px; color: var(--text-muted); margin-top: 2px; font-family: var(--font-mono); }
+
+.memoryInfo {
+  display: flex; gap: 24px; margin-top: 16px; font-size: 12px; color: var(--text-muted);
+  padding-top: 12px; border-top: 1px solid var(--border);
+}
+
+.properties { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+
+.propCard {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 16px; text-align: center;
+}
+
+.propCard h4 { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+
+.complexity {
+  display: inline-block; font-size: 18px; font-weight: 700; font-family: var(--font-mono);
+  color: var(--accent-cyan); margin-bottom: 6px;
+}
+
+.propCard p { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+
+.sidebar { display: flex; flex-direction: column; gap: 16px; }
+
+.infoCard {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px;
+}
+
+.infoCard h3 { font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+
+.concept { margin-bottom: 16px; }
+.concept strong { font-size: 14px; color: var(--accent-blue); }
+.concept p { font-size: 13px; color: var(--text-secondary); margin-top: 4px; line-height: 1.5; }
+
+.formula {
+  font-family: var(--font-mono); font-size: 14px; color: var(--accent-cyan);
+  background: var(--bg-secondary); padding: 6px 10px; border-radius: 4px;
+  margin: 6px 0; display: inline-block;
+}
+
+.errorList { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.errorList li { font-size: 13px; color: var(--text-secondary); line-height: 1.5; padding-left: 16px; position: relative; }
+.errorList li::before { content: '⚠'; position: absolute; left: 0; font-size: 11px; }
+.errorList strong { color: var(--accent-red); }
